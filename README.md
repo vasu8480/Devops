@@ -89,4 +89,3 @@ sudo systemctl status jenkins
 ----------------------------------------------------------------
 
 aws eks --region ap-south-2 update-kubeconfig --name eks-cluster-1
-![image](https://github.com/vasu8480/Devops/assets/48316372/305892c1-6b89-4201-9240-09e9d171f36c)
