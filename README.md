@@ -59,6 +59,10 @@ sudo find / -name initialAdminPassword
 
 kubectl port-forward svc/jenkins 8080:8080    
 
+kubectl delete pods --all
+
+kubectl delete pods --all -n <namespace>
+
 
 
 
