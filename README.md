@@ -1,5 +1,3 @@
-# Devops
-
 sudo yum update -y
 
 	curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.29.0/2024-01-04/bin/darwin/amd64/kubectl
@@ -24,7 +22,7 @@ aws eks update-kubeconfig --region ap-south-2 --name eks-cluster-1
 -----------------------------------------------------------------------
 
 
-aws eks update-kubeconfig --region ap-south-2 --name  eks-UC5U9AkX
+aws eks update-kubeconfig --region ap-south-2 --name  eks-B0ezDN1t
 
 kubectl cluster-info
 
@@ -47,10 +45,19 @@ kubectl apply -f jenkins-service.yaml
 
 kubectl apply -f jenkins-job.yaml
 
-kubectl get svc jenkins -o wide
+kubectl get nodes -o wide
+
+
+
+kubectl get pods -o wide
+
+sudo find / -name initialAdminPassword
+
+
+
+
 
 kubectl port-forward svc/jenkins 8080:8080    
-
 
 
 
@@ -82,4 +89,4 @@ sudo systemctl status jenkins
 ----------------------------------------------------------------
 
 aws eks --region ap-south-2 update-kubeconfig --name eks-cluster-1
-![Uploading image.png…]()
+![image](https://github.com/vasu8480/Devops/assets/48316372/305892c1-6b89-4201-9240-09e9d171f36c)
